@@ -1,0 +1,36 @@
+{
+  "name": "my-react-loadable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production webpack",
+    "start": "npm run build && NODE_ENV=production node dist/node/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@loadable/component": "^5.10.3",
+    "@loadable/server": "^5.10.3",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.0",
+    "@babel/preset-react": "^7.7.0",
+    "@loadable/babel-plugin": "^5.10.3",
+    "@loadable/webpack-plugin": "^5.7.1",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "path": "^0.12.7",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-cli": "^3.3.10",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
